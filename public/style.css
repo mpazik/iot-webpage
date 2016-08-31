@@ -1,0 +1,30 @@
+body {
+    width: 960px;
+    margin: 0 auto;
+}
+
+nav {
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+    margin-top: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0.5em;
+}
+
+nav a:hover {
+    text-decoration: none;
+}
+
+nav #login {
+    float: right;
+    margin: -0.1em -0.5em 0 0;
+    font-size: 0.8em;
+    padding: 0.4em 0.8em;
+}
+ main {
+     margin-top: 1em;
+     padding: 0 1em;
+ }
