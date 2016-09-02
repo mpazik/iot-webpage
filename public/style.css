@@ -1,6 +1,7 @@
 body {
     width: 960px;
     margin: 0 auto;
+    line-height: 1.2em;
 }
 
 nav {
@@ -12,19 +13,42 @@ nav {
 nav a {
     text-decoration: none;
     padding: 0.5em;
+    color: var(--main-color);
 }
 
 nav a:hover {
+    color: var(--highlight-color);
     text-decoration: none;
 }
 
-nav #login {
+nav #login-button {
     float: right;
-    margin: -0.1em -0.5em 0 0;
+    margin: -0.3em -0.5em 0 0;
     font-size: 0.8em;
     padding: 0.2em 0.8em;
 }
- main {
-     margin-top: 1em;
-     padding: 0 1em 1em;
- }
+
+main {
+    margin-top: 1em;
+    padding: 0 1em 1em;
+}
+
+#page-login {
+    margin: 2em auto;
+    width: 230px;
+}
+
+#page-login a {
+    line-height: 2em;
+}
+
+#page-registration #game-description {
+    width: 50%;
+    float: left;
+    margin-right: 5%;
+}
+
+#page-registration #game-registration {
+    width: 45%;
+    float: left;
+}

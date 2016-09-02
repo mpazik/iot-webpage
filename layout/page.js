@@ -4,4 +4,3 @@ module.exports = (data) => {
     return main(data);
 };
 
-

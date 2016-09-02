@@ -48,7 +48,8 @@ module.exports = function render(options) {
             ext: 'js'
         });
         const layout = require(layoutPath);
-        const renderData = Object.assign({}, metadata, {content: file.contents});
+        const pageId = 'page-' + path.parse(file.path).name;
+        const renderData = Object.assign({}, metadata, {content: file.contents, id: pageId});
         file.contents = new Buffer(layout(renderData));
         decache(layoutPath);
 

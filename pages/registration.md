@@ -1,6 +1,8 @@
 ---
-layout: page
-title: Registration to Isles of Tales
+layout: registration
+title: Isles of Tales
 ---
-abacsd
-asdfa
+# Welcome!
+Some game description
+
+[Read more about game](/about-game)

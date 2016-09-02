@@ -59,6 +59,6 @@ function watchLayout() {
 function runWebserver() {
     gulp.src('build')
         .pipe(webserver({
-            livereload: true
+            livereload: false
         }));
 }

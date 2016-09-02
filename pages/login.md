@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: login
 title: Login into the Game
 ---
-dupaa
+# Login
