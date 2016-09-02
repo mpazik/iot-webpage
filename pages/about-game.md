@@ -1,4 +1,4 @@
 ---
-layout: index.js
+layout: page
 title: About the game
 ---

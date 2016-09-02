@@ -1,5 +1,5 @@
 ---
-layout: index.js
+layout: page
 title: Login into the Game
 ---
 dupaa

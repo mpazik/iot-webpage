@@ -1,7 +1,5 @@
 ---
-layout: index.js
+layout: news
 title: News from Isles of Tales
 ---
-
-adsfadsf
-dupa
+# News

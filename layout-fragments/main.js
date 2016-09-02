@@ -1,4 +1,4 @@
-const nav = require('../layout-fragments/navigation');
+const nav = require('./navigation');
 
 module.exports = (data) =>`
 <html>

@@ -44,7 +44,8 @@ module.exports = function render(options) {
 
         const layoutPath = path.format({
             dir: properties.layoutDir,
-            base: layoutName
+            base: layoutName,
+            ext: 'js'
         });
         const layout = require(layoutPath);
         const renderData = Object.assign({}, metadata, {content: file.contents});
