@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Marek Pazik",
-  "dependencies": {},
+  "dependencies": {
+    "last-run": "latest"
+  },
   "devDependencies": {
     "browser-sync": "^2.14.3",
     "decache": "^4.1.0",
@@ -15,6 +17,7 @@
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-front-matter": "^1.3.0",
     "gulp-marked": "^1.0.0",
-    "gulp-rename": "^1.2.2"
+    "gulp-rename": "^1.2.2",
+    "gulp-webserver": "^0.9.1"
   }
 }

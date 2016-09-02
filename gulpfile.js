@@ -5,12 +5,13 @@ const rename = require('gulp-rename');
 const renderJs = require('./gulp-render-js');
 const del = require('del');
 const lastRun = require('last-run');
+const webserver = require('gulp-webserver');
 
 gulp.task('build', gulp.series(buildPages, copyResources));
 
 gulp.task('build:clean', gulp.series(clean, 'build'));
 
-gulp.task('default', gulp.series('build', gulp.parallel(watchPages, watchLayout, watchResources)));
+gulp.task('default', gulp.series('build', gulp.parallel(watchPages, watchLayout, watchResources, runWebserver)));
 
 
 function clean() {
@@ -53,4 +54,11 @@ function watchLayout() {
         .on('change', () => {
             lastRun.release(buildPages);
         });
+}
+
+function runWebserver() {
+    gulp.src('build')
+        .pipe(webserver({
+            livereload: true
+        }));
 }
