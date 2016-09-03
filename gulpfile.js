@@ -37,7 +37,7 @@ function buildPages() {
 }
 
 function copyResources() {
-    return gulp.src('./public/*', {since: gulp.lastRun('build')})
+    return gulp.src('./public/**/*', {since: gulp.lastRun('build')})
         .pipe(gulp.dest('./build'))
 }
 
@@ -46,7 +46,7 @@ function watchPages() {
 }
 
 function watchResources() {
-    return gulp.watch(['./public/*'], gulp.parallel(copyResources));
+    return gulp.watch(['./public/**/*'], gulp.parallel(copyResources));
 }
 
 function watchLayout() {

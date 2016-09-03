@@ -2,11 +2,13 @@
     --main-color: #F7D104;
     --highlight-color: #FFF;
     --link-color: #FFF;
+    --text-color: #AAA;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
     background: #156c99;
+    color: var(--text-color);
 }
 
 html, body, div {

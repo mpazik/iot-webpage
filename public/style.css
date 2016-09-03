@@ -4,6 +4,10 @@ body {
     line-height: 1.2em;
 }
 
+header {
+    height: 50px;
+}
+
 nav {
     font-size: 1.2em;
     padding: 0.5em 1em;
@@ -31,6 +35,18 @@ nav #login-button {
 main {
     margin-top: 1em;
     padding: 0 1em 1em;
+}
+
+#logged-section {
+    float: right;
+}
+
+#logged-section span {
+    color: var(--highlight-color);
+}
+
+#logout-button {
+    margin-left: 1em;
 }
 
 #page-login {
