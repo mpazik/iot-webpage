@@ -2,7 +2,7 @@
     --main-color: #F7D104;
     --highlight-color: #FFF;
     --link-color: #FFF;
-    --text-color: #AAA;
+    --text-color: #BBB;
 }
 
 body {
@@ -175,5 +175,5 @@ table td {
 }
 
 .form-group {
-    padding: 5px;
+    padding: 10px 5px;
 }

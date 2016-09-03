@@ -4,6 +4,7 @@
         errorMessage.innerText = error;
         errorMessage.style.display = 'block';
     }
+    document.getElementById('error-message').style.display = 'none';
 
     document.querySelector("#page-registration form").onsubmit = function () {
         const nick = document.getElementsByName('nick')[0].value;
@@ -17,7 +18,10 @@
         }
 
         UserService.register(nick, email, password)
-            .then(() => UserService.login(nick, password))
+            .then(() => {
+                document.getElementById('error-message').style.display = 'none';
+                UserService.login(nick, password)
+            })
             .then(Play)
             .catch(showError);
         return false;

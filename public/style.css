@@ -2,10 +2,12 @@ body {
     width: 960px;
     margin: 0 auto;
     line-height: 1.2em;
+    background: url(images/bg.jpg) no-repeat center;
 }
 
 header {
-    height: 50px;
+    height: 80px;
+    padding: 20px 10px 0 30px;
 }
 
 nav {
@@ -34,11 +36,12 @@ nav #login-button {
 
 main {
     margin-top: 1em;
-    padding: 0 1em 1em;
+    padding: 1em 1em 2em;
 }
 
 #logged-section {
     float: right;
+    text-shadow: 0 0 3px black;
 }
 
 #logged-section span {
@@ -48,6 +51,16 @@ main {
 #logout-button {
     margin-left: 1em;
 }
+
+#logo {
+    height: 80px;
+    width: 500px;
+     background: url(images/logo.svg) no-repeat;
+    float: left;
+    fill: red;
+}
+
+/* page specific */
 
 #page-login {
     margin: 2em auto;
