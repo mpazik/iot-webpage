@@ -4,7 +4,10 @@
   "description": "Website for Isle of Tales game",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/gulp",
+    "prepublish": "./node_modules/.bin/gulp build:dist",
+    "publish": "./node_modules/.bin/gulp publish"
   },
   "author": "Marek Pazik",
   "dependencies": {
@@ -15,6 +18,7 @@
     "decache": "^4.1.0",
     "del": "latest",
     "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-awspublish": "^3.3.0",
     "gulp-front-matter": "^1.3.0",
     "gulp-marked": "^1.0.0",
     "gulp-rename": "^1.2.2",
