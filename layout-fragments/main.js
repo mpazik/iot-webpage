@@ -11,7 +11,11 @@ module.exports = (data) => {
         <link rel="stylesheet" type="text/css" href="/theme.css">
         <link rel="stylesheet" type="text/css" href="/style.css">
         <link rel="icon" type="image/png" href="/images/icon.png">
+        <script async src="https://www.google-analytics.com/analytics.js"></script>
         <script src="/src/configuration.js"></script>
+        <script>
+  
+</script>
         <title>${data.title}</title>
     </head>
     <body>

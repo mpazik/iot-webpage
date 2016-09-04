@@ -84,13 +84,13 @@
         },
         isUserLoggedIn() {
             if (userToken) {
-                Promise.resolve();
+                Promise.resolve(userToken.sub);
             }
             return getUserToken().then(userToken => {
                 if (!isTokenValid(userToken)) {
                     return Promise.reject('Token expired');
                 }
-                return Promise.resolve();
+                return Promise.resolve(userToken.sub);
             })
         },
         getUserName() {
@@ -111,6 +111,7 @@
                 })
                 .then(response => {
                     saveUserToken(response.loginToken);
+                    return userToken.sub
                 });
         },
         login (nick, password) {

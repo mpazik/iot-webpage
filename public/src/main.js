@@ -1,12 +1,13 @@
 function Play() {
     const newWin = window.open(Configuration.gameUrl);
-    if(newWin == null || !newWin || newWin.closed || typeof newWin.closed=='undefined')
-    {
+    if (newWin == null || !newWin || newWin.closed || typeof newWin.closed == 'undefined') {
         window.location.href = Configuration.gameUrl;
     }
 }
 
-function UserIsLoggedIn() {
+function UserIsLoggedIn(userId) {
+    ga('set', 'userId', userId);
+
     UserService.getUserName().then((name) => {
         document.getElementById('logged-section').innerHTML = `
 You are logged as: <span>${name}</span> <button id='logout-button'>Log out</button>
@@ -35,6 +36,17 @@ function UserIsLoggedOut() {
 }
 
 (function () {
+    function initGoogleAnalytics() {
+        window.ga = window.ga || function () {
+                (ga.q = ga.q || []).push(arguments)
+            };
+        ga.l = +new Date;
+
+        ga('create', 'UA-83670040-1', 'auto');
+        ga('send', 'pageview');
+    }
+    initGoogleAnalytics();
+
     UserService.onLoaded(() => {
         UserService.isUserLoggedIn()
             .then(UserIsLoggedIn)
