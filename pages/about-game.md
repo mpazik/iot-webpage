@@ -2,3 +2,61 @@
 layout: page
 title: About the game
 ---
+# About the game
+Isles of Tales is a sandbox role play multi-player browser game in which economy and politic are important factors. 
+You control and develop your character. Story of the game, economy, geo-politics are full driven by Players.
+
+## Land
+The kingdom has found a new lands and search for a daredevil who will dare to discover and settle them.
+The lands look rich but they do not seem to be an easy place to live. You will have to satisfy your hunger, 
+protect from cold, wild animals and greed of other.
+
+#### Cooperation for survival
+You can try alone but is easier when you cooperate. You can establish settlement.
+A well prospering settlement can be transformed to a proper city and invite other people to join it.
+Some locations are especial good for establish cities. They may have deposits of rare minerals, be easy to defend or be on a trade route.
+Though many will desire such location so the cities have to be well managed and armed to resist other's temptation to capture it.  
+
+## Kingdom
+#### Market
+As the kingdom has found the new lands, it has build a small market where you can buy and sell materials and items.
+Because it's a long and dangerous way to the new land the markup is high.
+It's wiser to trade with other settlers if you only can.
+
+#### Taxes
+The kingdom apply some taxes on a land you and city ows and in return guarantee that no one will can touch your things as long as there is no declared war.
+It does not interrupt to the local geo-politic.
+
+#### Battles
+There are many enemies of the kingdom. It always needs fresh recruits for battles. It's a good way to train your military skills and earn additional gold.
+
+## Cities and politics
+Cities are important thing in the game. Their governor could split the land to smaller parcels and rent them.
+Ruler can create new taxes and for gathered money build roads, fortifications, markets, public facilities, recruit an army, 
+corrupt rulers of other cities or give it to people who support they as a ruler.
+
+#### Alliances and wars
+Cities can creates alliances or declare war to other cities. The winner chose the next ruler of the defeated city.  
+They can decide what to do whit the citizens. So better chose the city that is able to defend.
+
+## Economy
+Each island is different and provide different materials. Some are rear other more common.
+The situation in the kingdom is not always stabilized so prices on the kingdom's markets will vary.  
+That will make some cities thrive and other bankrupt and cause new wars and alliances.
+
+All good are gathered and crafted by players. However gathering and crafting will be either fun or could be automated.
+I don't want to waste people's time on doing boring, repetitive things.
+
+## Story
+The stories as other things are created by players. You can participate in main game plots.
+Some may be written down and share to other.
+
+Each action is persisted. The whole game could be replayed. 
+You will be able to see story of each player, isle, city or even item.
+You can check what was your impact on the world. 
+It does not matter what you currently have. It only matter what you did and you can always see it and show it to your friends.
+
+### [Tell me what you think about this](mailto:contact+about-game@islesoftales.com)
+
+
+`Note that the development of the game has just started and not all features are available yet.`
