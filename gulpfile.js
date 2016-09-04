@@ -21,7 +21,7 @@ const path = {
     distFiles: './dist/**/*'
 };
 
-gulp.task('build', gulp.series(buildPages, copyResources));
+gulp.task('build', gulp.series(buildPages, copyResources, createIndex));
 
 gulp.task('build:clean', gulp.series(clean, 'build'));
 
@@ -55,6 +55,11 @@ function buildPages() {
 
 function copyResources() {
     return gulp.src(path.publicFiles, {since: gulp.lastRun('build')})
+        .pipe(gulp.dest(path.build))
+}
+
+function createIndex() {
+    return gulp.src(path.build + '/registration/index.html')
         .pipe(gulp.dest(path.build))
 }
 

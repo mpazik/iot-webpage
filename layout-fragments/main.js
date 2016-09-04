@@ -19,7 +19,7 @@ module.exports = (data) => {
         <script src="/src/user-service.js"></script>
         <script src="/src/main.js"></script>
         <header>
-        <div id="logo"></div>
+        <a id="logo" href="/"></a>
         <div id="logged-section"></div>
         </header>
         ${nav()}
