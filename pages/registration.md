@@ -3,7 +3,7 @@ layout: registration
 title: Isles of Tales
 ---
 # Welcome!
-Isles of Tales is an sandbox role play multi-player browser game with an important economic and political factor.
+Isles of Tales is the sandbox role play multi-player browser game with an important economic and political factor.
 
 The kingdom have found new rich and uninhabited lands.  
 You are the one of first settlers with plenty of opportunities.

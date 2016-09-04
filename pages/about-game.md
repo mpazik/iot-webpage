@@ -3,7 +3,7 @@ layout: page
 title: About the game
 ---
 # About the game
-Isles of Tales is a sandbox role play multi-player browser game in which economy and politic are important factors. 
+Isles of Tales is the sandbox role play multi-player browser game in which economy and politic are important factors. 
 You control and develop your character. Story of the game, economy, geo-politics are full driven by Players.
 
 ## Land
@@ -52,7 +52,11 @@ The stories as other things are created by players. You can participate in main 
 Some may be written down and share to other.
 
 Each action is persisted. The whole game could be replayed. 
-You will be able to see story of each player, isle, city or even item.
+You will be able to see story of:
+- player - see how abilities and equipment changed over time, look at the number of slayed enemies, gained achievements etc.
+- isle - who discover it, who and when discover treasures, take a walk on a isle in its past
+- city - who established it, history of wars and alliances, take a walk on a city in its past
+- item - who created it, who own it, e.g. in case of weapon, how many enemies it slayed
 You can check what was your impact on the world. 
 It does not matter what you currently have. It only matter what you did and you can always see it and show it to your friends.
 
