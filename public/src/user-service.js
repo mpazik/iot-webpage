@@ -49,7 +49,7 @@
     }
 
     function saveReissueToken(token) {
-        storage.set(reissueTokenKey, token);
+        return storage.set(reissueTokenKey, token);
     }
 
     function clearReissueToken() {
@@ -65,7 +65,7 @@
 
     function saveUserToken(token) {
         userToken = parseToken(token);
-        storage.set(userTokenKey, token);
+        return storage.set(userTokenKey, token);
     }
 
     function clearUserToken() {
@@ -116,8 +116,8 @@
         },
         login (nick, password) {
             return request.post('login', {nick, password}).then(response => {
-                saveUserToken(response.loginToken);
-                saveReissueToken(response.reissueToken);
+                return saveUserToken(response.loginToken)
+                    .then(() => saveReissueToken(response.reissueToken));
             });
         },
         logout () {

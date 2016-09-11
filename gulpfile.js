@@ -29,7 +29,7 @@ gulp.task('default', gulp.series('build', gulp.parallel(watchPages, watchLayout,
 
 gulp.task('build:dist', gulp.series(cleanDist, 'build:clean', copyToDist, overrideByProdFiles));
 
-gulp.task('publish', gulp.series(publishToAws));
+gulp.task('publish', gulp.series('build:dist', publishToAws));
 
 function clean() {
     return del(path.build);
