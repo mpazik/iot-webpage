@@ -1,7 +1,7 @@
 const main = require('../layout-fragments/main');
 
 module.exports = (data) => {
-    data.scripts = ['//connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.7'];
+    data.scripts = ['//connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.7&appId=584554898422237'];
     data.content += `
 <div id="fb-root"></div>
 <div class="fb-page"

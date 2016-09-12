@@ -5,8 +5,23 @@ function Play() {
     }
 }
 
+function initGoogleAnalytics(userId) {
+    window['GoogleAnalyticsObject'] = 'ga';
+    window.ga = window.ga || function () {
+            (window.ga.q = window.ga.q || []).push(arguments)
+        };
+    window.ga.l = 1 * new Date();
+
+    if (userId) {
+        ga('create', 'UA-83670040-1', 'auto', {userId});
+    } else {
+        ga('create', 'UA-83670040-1', 'auto');
+    }
+    ga('send', 'pageview');
+}
+
 function UserIsLoggedIn(userId) {
-    ga('set', 'userId', userId);
+    initGoogleAnalytics(userId);
 
     UserService.getUserName().then((name) => {
         document.getElementById('logged-section').innerHTML = `
@@ -15,7 +30,6 @@ You are logged as: <span>${name}</span> <button id='logout-button'>Log out</butt
         const logoutButton = document.getElementById('logout-button');
         logoutButton.addEventListener('click', () => {
             UserService.logout();
-            UserIsLoggedOut();
             window.location.href = '/login';
         });
     });
@@ -26,6 +40,7 @@ You are logged as: <span>${name}</span> <button id='logout-button'>Log out</butt
 }
 
 function UserIsLoggedOut() {
+    initGoogleAnalytics();
     document.getElementById('logged-section').innerHTML = '';
 
     const loginButton = document.getElementById('login-button');
@@ -36,17 +51,6 @@ function UserIsLoggedOut() {
 }
 
 (function () {
-    function initGoogleAnalytics() {
-        window.ga = window.ga || function () {
-                (ga.q = ga.q || []).push(arguments)
-            };
-        ga.l = +new Date;
-
-        ga('create', 'UA-83670040-1', 'auto');
-        ga('send', 'pageview');
-    }
-    initGoogleAnalytics();
-
     UserService.onLoaded(() => {
         UserService.isUserLoggedIn()
             .then(UserIsLoggedIn)

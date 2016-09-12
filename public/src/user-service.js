@@ -1,3 +1,4 @@
+//noinspection ThisExpressionReferencesGlobalObjectJS
 (function (root) {
     const reissueTokenKey = 'reissueToken';
     const userTokenKey = 'userToken';
@@ -117,7 +118,8 @@
         login (nick, password) {
             return request.post('login', {nick, password}).then(response => {
                 return saveUserToken(response.loginToken)
-                    .then(() => saveReissueToken(response.reissueToken));
+                    .then(() => saveReissueToken(response.reissueToken))
+                    .then(() => userToken.sub);
             });
         },
         logout () {
