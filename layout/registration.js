@@ -9,22 +9,22 @@ module.exports = (data) => {
 </section>
 <section id="game-registration">
 <h2>Register to game</h2>
-<form method="post" class="large-input">
+<form method="post" class="large-input" id="registration-form">
     <div class="form-group">
         <label for="login-nick">Nick:</label>
-        <input type="text" name="nick" minlength="3" maxlength="20" required>
+        <input type="text" id="login-nick" minlength="3" maxlength="20" required>
     </div>
     <div class="form-group">
         <label for="email">Email:</label>
-        <input type="email" name="email" minlength="3" maxlength="20" required>
+        <input type="email" id="email" minlength="3" maxlength="20" required>
     </div>
     <div class="form-group">
         <label for="password">Password:</label>
-        <input type="password" name="password" minlength="3" maxlength="20" required>
+        <input type="password" id="password" minlength="3" maxlength="20" required>
     </div>
     <div class="form-group">
         <label for="repeat-password">Repeat Password:</label>
-        <input type="password" name="repeat-password" minlength="3" maxlength="20" required>
+        <input type="password" id="repeat-password" minlength="3" maxlength="20" required>
     </div>
     <div class="form-group">
         <input type="submit" value="Play!">

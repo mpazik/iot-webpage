@@ -4,6 +4,6 @@ module.exports = () =>`
     <a href="/about-game">About game</a>
     <a href="/news">News</a>
     <a href="mailto:contact@islesoftales.com">Contact</a>
-    <button id="login-button">Login</a>
+    <button id="login-button">Login</button>
 </nav>
 `;

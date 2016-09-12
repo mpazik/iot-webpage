@@ -6,11 +6,11 @@
     }
     document.getElementById('error-message').style.display = 'none';
 
-    document.querySelector("#page-registration form").onsubmit = function () {
-        const nick = document.getElementsByName('nick')[0].value;
-        const email = document.getElementsByName('email')[0].value;
-        const password = document.getElementsByName('password')[0].value;
-        const repeatedPassword = document.getElementsByName('repeat-password')[0].value;
+    document.getElementById('registration-form').onsubmit = function () {
+        const nick = document.getElementById('login-nick').value;
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        const repeatedPassword = document.getElementById('repeat-password').value;
 
         if (password != repeatedPassword) {
             showError("Passwords are not identical");

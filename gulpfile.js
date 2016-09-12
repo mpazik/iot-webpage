@@ -64,7 +64,7 @@ function createIndex() {
 }
 
 function watchPages() {
-    return gulp.watch([path.pages], gulp.parallel(buildPages));
+    return gulp.watch([path.pages], gulp.series(buildPages, createIndex));
 }
 
 function watchResources() {
@@ -72,7 +72,7 @@ function watchResources() {
 }
 
 function watchLayout() {
-    return gulp.watch([path.layoutFiles, path.layoutFragmentFiles], gulp.parallel(buildPages))
+    return gulp.watch([path.layoutFiles, path.layoutFragmentFiles], gulp.series(buildPages, createIndex))
         .on('change', () => {
             lastRun.release(buildPages);
         });
