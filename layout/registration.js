@@ -2,10 +2,11 @@ const main = require('../layout-fragments/main');
 
 module.exports = (data) => {
     const description = data.content;
-    data.scripts = ['/src/registration.js'];
+    data.scripts = ['/src/registration.js', '//connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.7&appId=584554898422237'];
     data.content = `
 <section id="game-description">
     ${description}
+    <div class="fb-like" data-href="https://www.facebook.com/islesoftales" data-layout="button" data-action="like" data-size="large" data-show-faces="ture" data-share="true"></div>
 </section>
 <section id="game-registration">
 <h2>Register to game</h2>
