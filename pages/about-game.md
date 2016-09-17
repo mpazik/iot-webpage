@@ -24,8 +24,8 @@ Because it's a long and dangerous way to the new land the markup is high.
 It's wiser to trade with other settlers if you only can.
 
 #### Taxes
-The kingdom apply some taxes on a land you and city ows and in return guarantee that no one will can touch your things as long as there is no declared war.
-It does not interrupt to the local geo-politic.
+The kingdom apply some taxes on a land that you and a city owns. In return it guarantee that no one will touch your things as long as there is no declared war.
+It does not interrupt to the local geopolitics.
 
 #### Battles
 There are many enemies of the kingdom. It always needs fresh recruits for battles. It's a good way to train your military skills and earn additional gold.
@@ -36,15 +36,15 @@ Ruler can create new taxes and for gathered money build roads, fortifications, m
 corrupt rulers of other cities or give it to people who support they as a ruler.
 
 #### Alliances and wars
-Cities can creates alliances or declare war to other cities. The winner chose the next ruler of the defeated city.  
-They can decide what to do whit the citizens. So better chose the city that is able to defend.
+Cities can create alliances or declare war to other cities. The winner will choose the next ruler of the defeated city.  
+The next ruler can decide what to do with citizens. So better chose the city that is able to defend.
 
 ## Economy
-Each island is different and provide different materials. Some are rear other more common.
+Each island is different and provide different materials. Some are rare other more common.
 The situation in the kingdom is not always stabilized so prices on the kingdom's markets will vary.  
 That will make some cities thrive and other bankrupt and cause new wars and alliances.
 
-All good are gathered and crafted by players. However gathering and crafting will be either fun or could be automated.
+All goods are gathered and crafted by players. However gathering and crafting will be either fun or could be automated.
 I don't want to waste people's time on doing boring, repetitive things.
 
 ## Story
