@@ -3,7 +3,7 @@ const nav = require('./navigation');
 module.exports = (data) => {
     var scripts = '';
     if (data.scripts) {
-        scripts = data.scripts.map(script => `<script src="${script}"></script>`).join('/n');
+        scripts = data.scripts.map(script => `<script src="${script}"></script>`).join('\n');
     }
     return `
 <html>

@@ -17,3 +17,6 @@ You are the one of first settlers with plenty of opportunities.
 Note that the development of the game has just started.
 
 [Read more about game](/about-game)
+
+If you want to fallow the game progress,  
+give a "Like" and see game updates on your Facebook.
