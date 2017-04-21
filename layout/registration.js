@@ -17,7 +17,7 @@ module.exports = (data) => {
     </div>
     <div class="form-group">
         <label for="email">Email:</label>
-        <input type="email" id="email" minlength="3" maxlength="20" required>
+        <input type="email" id="email" minlength="3" maxlength="50" required>
     </div>
     <div class="form-group">
         <label for="password">Password:</label>
