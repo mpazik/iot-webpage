@@ -100,12 +100,9 @@ function overrideByProdFiles() {
 }
 
 function publishToAws() {
-    process.env['AWS_PROFILE'] = 's3_deploy';
-
     const publisher = AwsPublish.create({
-        region: 'eu-central-1',
         params: {
-            Bucket: 'islesoftales.com'
+            Bucket: 'islesoftales'
         }
     });
 
